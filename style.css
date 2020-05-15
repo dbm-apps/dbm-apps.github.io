@@ -621,78 +621,7 @@ blockquote
 }
 
 
-.flip-card
-{
-    width: 350px;
-    height: 450px;
-    margin: auto;
-    border: 10px solid #efefef;
-    border-radius: 16px;
 
-}
-
-.flip-card-back
-{
-    background-color: #007bff;
-    color: #fff;
-    transform: rotateY(180deg);
-    z-index: 1;
-}
-
-.flip-card-back .back-header
-{
-    height: 45%;
-    text-align: center;
-    
-}
-
-.flip-card-back .back-header img
-{
-    width: 50%;
-    margin-top: 20px;
-          border-radius: 2.3%;
-
-}
-
-.flip-card-front img
-{
-    width: 100%;
-    height: 100%;
-      border-radius: 2.3%;
-
-}
-
-
-
-.flip-card-inner
-{
-    position: relative;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    
-}
-
-.flip-card-back, .flip-card-front
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.flip-card:hover .flip-card-inner
-{
-    transform: rotateY(180deg);
-}
-
-
-.flip-card-back .back-footer
-{
-    height: 55%;
-    padding: 0 15px;
-    
-}
 
 .back-footer a
 {
@@ -732,15 +661,7 @@ blockquote
     margin-top: 7px;
 }
 
-#cards
-{
-    margin-bottom: 100px;
-}
-#cards h1
-{
-   font-family: dori; 
-    
-}
+
 
 #contact
 {
@@ -783,6 +704,63 @@ font-family: dori;
     margin: 10px;
     color: #007bff;
 }
+
+.contact-section{
+  background: url(bg.png) no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+.contact-section h1{
+  text-align: center;
+  color: #ddd;
+}
+.border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+
 
 
 #footer
